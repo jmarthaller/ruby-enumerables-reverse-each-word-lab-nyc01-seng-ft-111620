@@ -64,21 +64,21 @@
 # # end
 
 
-# def reverse_each_word(string)
-#   splitted = string.split(" ")
-#   splitted.collect do |word|
-#     word.reverse
-#   end
-#   splitted.join(' ')
-# end
-
-
-
-
 def reverse_each_word(string)
   splitted = string.split(" ")
-  stopped = splitted.map { |word| word.reverse }
-  stopped.join(" ")
+  splitted.collect do |word|
+    word.reverse
+  end
+  splitted.join(' ')
 end
+
+
+
+
+# def reverse_each_word(string)
+#   splitted = string.split(" ")
+#   stopped = splitted.map { |word| word.reverse }
+#   stopped.join(" ")
+# end
 
 
