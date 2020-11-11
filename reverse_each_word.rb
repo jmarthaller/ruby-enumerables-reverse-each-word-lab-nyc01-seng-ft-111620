@@ -66,10 +66,10 @@
 
 def reverse_each_word(string)
   splitted = string.split(" ")
-  splitted.collect do |word|
+ mapped = splitted.collect do |word|
     word.reverse
   end
-  splitted.join(' ')
+  mapped.join(' ')
 end
 
 
